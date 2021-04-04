@@ -5,6 +5,10 @@
         </title>
     </head>
     <body>
+        <form method="post" action="/todos/create">
+            <input type="text" name="description" value="" />
+            <input type="submit" value="Submit" />
+        </form>
         <ul>
             {% for d in data %}
             <li>{{ d.description }}</li>
